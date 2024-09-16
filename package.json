@@ -1,0 +1,17 @@
+{
+	"name": "www.transformacereality.cz",
+	"version": "1.0.0",
+	"description": "www.transformacereality.cz on static-bootstrap-web framework",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npx web run",
+		"npx-web-run": "web-run"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"static-bootstrap-web": "file:../static-bootstrap-web"
+	}
+}
