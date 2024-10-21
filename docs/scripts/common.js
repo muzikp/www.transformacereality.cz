@@ -2,7 +2,7 @@
 
 $(function(){
     $(".contact-form").submit(function(event) {                
-        $(".contact-form").find(`[type="submit"]`).attr("disabled", true);
+        $(".contact-form").find(`[type="submit"]`).attr("disabled", true).prop("disabled", true);
         event.preventDefault();
         const formData = JSON.stringify($(this).serializeArray());
         const url = "https://api.evalytics.org/v1/ses?app=cKtw2FGU8z4Ycxl1";    
@@ -18,14 +18,14 @@ $(function(){
                     title: 'Odesláno',
                     message: 'Vaše zpráva byla úspěšně odeslána.'
                 });
-                //$(".contact-form").find(`[type="submit"]`).attr("disabled", false);
+                //$(".contact-form").find(`[type="submit"]`).attr("disabled", false).prop("disabled", false);
             },            
             error: function(xhr, status, error) {                
                 iziToast.error({
                     title: 'Odeslání se nezdařilo',
                     message: 'Vaši zprávu se nepodařilo odeslat. Zprávu můžete poslat na info@transformacereality.cz.'
                 });
-                //$(".contact-form").find(`[type="submit"]`).attr("disabled", false);
+                $(".contact-form").find(`[type="submit"]`).attr("disabled", false).prop("disabled", false);
             }
         });
     });

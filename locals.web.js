@@ -64,7 +64,7 @@ module.exports = {
             },
             {
                 header: "Financování",
-                text: "Chcete investovat do nemovitostí s dobrým výnosem? Sháníte nemovitosti s určitými parametry, ale nemáte čas ji hledat? Víte o zajímavé nemovitosti, která by si zasloužila zvelebení?"
+                text: "Chcete investovat do nemovitostí s dobrým výnosem? Sháníte nemovitosti s určitými parametry, ale nemáte čas je hledat? Víte o zajímavé nemovitosti, která by si zasloužila zvelebení?"
             }
         ]
     },
