@@ -12,16 +12,16 @@ $fscalem: 100vw*0.0015;
 $content-side-offset-desktop: 10%;
 $content-side-offset-mobile: 3%;
 $rectangle-unit: 100vw * 0.08;
+$mobile_breakpoint: 992px;
 
 body {    
     background-color: $gray1 !important;
     .nav-item {
         text-align: center;
     }
-    .content {
-        //padding: 20px $content-side-offset-desktop;
+    .content {        
         margin: 20px auto;
-        max-width: 1200px;
+        max-width: 1200px;        
     };
     .section {
         padding-top: 3rem;
@@ -52,7 +52,7 @@ body {
         font-size: 36 * $fscale;
     }
     .fs20 {
-        font-size: 20 * $fscale;
+        font-size: 24 * $fscale;
     }
     .fs15 {
         font-size: 15 * $fscale;
@@ -441,7 +441,7 @@ body {
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $mobile_breakpoint) {
     body {
         .content {
             padding: 20px $content-side-offset-mobile;
@@ -450,7 +450,7 @@ body {
             font-size: 40 * $fscalem;
         }
         .fs36 {
-            font-size: 30 * $fscalem;
+            font-size: 27 * $fscalem;
         }
         .fs20 {
             font-size: 22 * $fscalem;
