@@ -1,0 +1,40 @@
+link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css" integrity="sha256-f6fW47QDm1m01HIep+UjpCpNwLVkBYKd+fhpb4VQ+gE=" crossorigin="anonymous")
+script(src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js" integrity="sha256-321PxS+POvbvWcIVoRZeRmf32q7fTFQJ21bXwTNWREY=" crossorigin="anonymous")
+#kontakt.section
+	h1.blue.fw600.fs66 Kontakt
+	.flex.drow
+		.c50.m0.np
+			.fw600.fs20 Transformace Reality s.r.o.
+			br
+			.fs20 Stankovského 1285/42
+			.fs20 250 88 Čelákovice
+			br
+			.fs20 info@transformacereality.cz
+			.fs20 !{phone}
+			br
+			.fs20 IČ: 02114763
+			.fs20 DIČ: CZ02114763
+			.fs20 Společnost je zapsaná pod spisovou značkou C 215751, 
+				br
+				| vedenou u Městského soudu v Praze
+		.c50.np
+			form.contact-form(action="javascript:void(0)" method="POST").flex-cont
+				input.bottom-border(name = "krestni_jmeno" type='text' autocomplete="given-name" placeholder="Křestní jméno")
+				input.bottom-border(name = "prijmeni" type='text' autocomplete="family-name" placeholder="Příjmení")
+				input.bottom-border(name="email" type='email' required autocomplete="email" placeholder="E-mail")
+				textarea.bottom-border(name="message" rows="5" type='text' placeholder='Vaše zpráva' required)
+				//
+					.flex.drow
+						.c50.np
+							.form-floating.mb-3.w-100
+								.form-check
+									input.form-check-input(name="gdpr" type='checkbox' value='' required)
+									label.fs20.required.form-check-label() souhlasím se zpracováním osobních údajů
+						.c50.np.jc-r
+							button.main-button(type="submit") odeslat
+								i.bi.bi-arrow-right
+				.jc-r
+					br
+					button.main-button(type="submit") odeslat
+								i.bi.bi-arrow-right
+				.callback

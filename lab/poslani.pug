@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    - var url = "/media/images/orfeus_009.webp"
+    - var headline = "Stavíme na <u>tradicích</u>,<br>měníme budoucnost.";
+    - var alt = "Multifunkční dům Orfeus"
+    include rectimg.pug
+    - var preview = false;
+    - var headline = "Poslání";
+    include poslani-template.pug
+    include kontakt.pug

@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+$mblue: rgba(0,98,166,1);
+$mblue90: rgba(0,98,166,0.9);
+$mblue80: rgba(0,98,166,0.8);
+$mblue70: rgba(0,98,166,0.7);
+$gray8: rgba(77,77,77,1);
+$gray4: rgba(186,186,186,1);
+$gray1: rgba(232,232,232);
+$fscale: 100vw*0.0005;
+$fscalem: 100vw*0.0015;
+$content-side-offset-desktop: 10%;
+$content-side-offset-mobile: 3%;
+$rectangle-unit: 100vw * 0.08;
+
+body {    
+    background-color: $gray1 !important;
+    .content {
+        padding: 20px $content-side-offset-desktop;
+    };
+    .section {
+        padding-top: 3rem;
+    }
+    .text,a,b,i,p,h1,h2,h3,h4,h5,h6,label,input, ::placeholder {
+        font-family: "Inter Tight", sans-serif;
+        font-optical-sizing: auto;
+        color: $gray8;
+    };
+    .hr-blue {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 5px;
+        border-bottom: solid $mblue 1px;
+    };  
+    .text:not(:last-child) {
+        margin-bottom: 1rem;
+    };
+    .text.no-bp {
+        margin-bottom: 0rem;
+    };
+    .fs66 {
+        font-size: 66 * $fscale;
+    }
+    .fs36 {
+        font-size: 36 * $fscale;
+    }
+    .fs20 {
+        font-size: 20 * $fscale;
+    }
+    .fs15 {
+        font-size: 15 * $fscale;
+    }
+    .fsp0 {
+        letter-spacing: 0px;
+    };
+    input::placeholder, textarea::placeholder {
+        font-size: 20 * $fscale;
+    }
+    .fw900 {
+        font-weight: 900;
+    };
+    .fw600 {
+        font-weight: 600;
+    }
+    .fw300 {
+        font-weight: 300;
+    }
+    .fw200 {
+        font-weight: 200;
+    }
+    .fw100 {
+        font-weight: 100;
+    }
+    .blue {
+        color: $mblue;
+    }
+    .blue-bg {
+        background-color: $mblue;
+    }
+    .white {
+        color: $gray1;
+    }
+    .white-bg {
+        background-color: $gray1;
+    }
+    .black {
+        color: $gray8;
+    }
+    .flex {
+        display: flex;        
+        width: 100%;
+        .align-top {
+            justify-content: flex-start;
+        };
+        .align-bottom {
+            justify-content: flex-end;
+        };
+    }
+    .flex .drow {
+        flex-direction: row;
+    }
+    .c100,.c33,.c40,.c20,.c60,.c50,.c25 {
+        overflow-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: left;
+    };
+    .c100 {        
+        width: 100%;
+    };
+    .c50 {
+        width: 50%;
+    };
+    .c33 {        
+        width: 100%;
+    };
+    .c40 {
+        width: 40%;
+    };
+    .c20 {
+        width: 20%;
+    };
+    .c25 {
+        width: 25%;
+    };
+    .c60 {
+        width: 60%;
+    };    
+    .c100 {
+        width: 100%;
+    }
+    .jc-c {
+        justify-content: center;
+        text-align: center;
+    }
+    .jc-l {
+        justify-content: start;
+        text-align: left;
+    }
+    .jc-r {
+        justify-content: end;
+        text-align: right;
+    }
+    nav {
+        .container-fluid {
+            padding-left: $content-side-offset-mobile;
+            padding-right: $content-side-offset-mobile;
+        };        
+        .logo {
+            max-height: 50px;
+            height: 50px;
+        };
+    };
+    .tab {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .tab-row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;            
+        }
+        .tab-row.narrow {
+            display: flex;
+            flex-direction: row !important;
+            width: 100%;
+            .c50 {
+                width: 50%;
+                padding: 0px;
+            }            
+        }        
+        .tab-row:first-child {         
+            margin-top: 3rem;
+        }
+        .tab-row:not(.borderless) {
+            padding: 2rem 0px;            
+            border-top: solid $gray4 1px;
+        }
+        .tab-row.borderless {
+            padding: 0.1rem 0px;                     
+        }
+    };
+    .contact-form {
+        input:not(.form-check-input), textarea {
+            width: 100%;
+            min-height: 3rem;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: solid $mblue 1px;
+            border-radius: 0px;
+            line-height: 1.5rem;
+            background-color: transparent;
+        }
+    }
+    .main-button {
+        background-color: transparent;
+        color: $mblue;
+        display: inline-block;
+        padding: 5px 20px;        
+        border: 2px solid $mblue;
+        height: fit-content;
+        border-radius: 50px;        
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        .bi {
+            margin-left: 0.5rem;
+            color: $mblue;
+        }
+    }
+    .m0 {
+        a,b,p,i {
+            margin: 0px;
+        }        
+    }
+    .np {
+        padding: 0px;
+    }
+    .btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .btn-container.center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .project-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;        
+        .preview {
+            padding-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            .image {
+                height: 400px;
+                overflow: hidden;
+            }           
+            img {
+                max-width: 100%;
+            };                        
+            .label {
+                display: flex;
+                justify-items: start;
+                .year {
+                    color: $gray4;
+                    padding-right: 1rem;
+                }
+                .text {
+                    color: $gray8;
+                }
+            }
+        }
+    }
+    a.inherit {
+        text-decoration: none;
+    }
+    .avatar {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    /* image rectangles */ 
+    .image-rectangles {
+        position: relative;
+        display: inline-block;
+        max-height: $rectangle-unit * 4;        
+        height: $rectangle-unit * 4;
+        overflow: hidden;
+    
+        .r1, .r2, .r3, .r4 {
+            background-color: $gray1;
+            position: absolute;
+        }
+    
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+        .r1 {
+            top: 0;
+            right: 0;        
+            width: $rectangle-unit * 3;
+            height: $rectangle-unit;
+        }
+    
+        .r2 {
+            top: $rectangle-unit;
+            right: 0;        
+            width: $rectangle-unit;
+            height: $rectangle-unit;
+        }
+    
+        .r3 {
+            top: 2 * $rectangle-unit;
+            right: $rectangle-unit;            
+            width: $rectangle-unit;
+            height: $rectangle-unit;
+        }
+    
+        .r4 {
+            top: 3 * $rectangle-unit;
+            right: 0;            
+            width: $rectangle-unit;
+            height: $rectangle-unit;
+        }
+    
+        .headline {
+            position: absolute;
+            font-size: 3.3vw;
+            color: white;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 1rem 5vw;            
+            /* Animace pozadí */
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.1); /* Průsvitné pozadí */
+                transform: translateX(-100%); /* Skryté zleva */
+                animation: slide-in 1s forwards; /* Animace */
+            }
+            .text {
+                color: white;
+                text-shadow: 2px 2px 10px black;
+            }
+        }
+    }
+    
+    /* Animace pro pozadí */
+    @keyframes slide-in {
+        from {
+            transform: translateX(-100%); /* Začíná mimo obrazovku */
+        }
+        to {
+            transform: translateX(0); /* Posune se zpět na pozici */
+        }
+    }
+    
+    .gallery {        
+        display: flex;
+        flex-wrap: wrap; /* Obrázky se budou zabalovat na další řádek */
+        justify-content: center;
+        justify-items: center;
+        a {
+            width: 50%;
+        }
+        .thumbnail {
+            width: 100%;
+            max-height: 450px;
+            overflow: hidden;
+        }
+        .header {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 66 * $fscale;
+            font-weight: 600;
+            color: $mblue;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    #footbar {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding-top: 2rem;        
+        //border-top: solid 1px $mblue;        
+        .evalytics {
+            height: 1rem;
+        }
+        .logo img {
+            height: 3rem;
+        }
+    }
+
+    .container-404 { 
+        min-height: 80vh;
+        display: flex; /* Aktivace Flexboxu */
+        flex-direction: column; /* Umožňuje vertikální uspořádání */
+        justify-content: center; /* Vertikální centrování obsahu */
+        align-items: center; /* Horizontální centrování obsahu */
+        
+        .logo {
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 2rem;    
+            img {
+                max-width: 200px; /* Maximální šířka obrázku */
+                width: 100%; /* Obrázek se přizpůsobí šířce kontejneru */
+                height: auto; /* Udržuje poměr stran */
+            }
+        }        
+        .msg {
+            width: 100%;
+            text-align: center;
+            font-size: 66 * $fscale; /* Přizpůsobení velikosti textu */
+            font-weight: 600; /* Nastavení tloušťky písma */
+            color: $mblue; /* Barva textu */
+        }
+    } 
+    .no-padding {
+        padding: 0px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    body {
+        .content {
+            padding: 20px $content-side-offset-mobile;
+        };        
+        .fs66 {
+            font-size: 40 * $fscalem;
+        }
+        .fs36 {
+            font-size: 30 * $fscalem;
+        }
+        .fs20 {
+            font-size: 22 * $fscalem;
+        }
+        .fs15 {
+            font-size: 20 * $fscalem;
+        }
+        nav {
+            .container-fluid {
+                padding-left: $content-side-offset-mobile;
+                padding-right: $content-side-offset-mobile;
+            };        
+            .logo {
+                max-height: 50px;
+                height: 50px;
+            };
+        };
+        .flex {
+            display: block;
+            //flex-direction: column;
+        }
+        .c100,.c60,.c40,.c33,.c20,.c50,.c25 {
+            display: block;
+            width: 100%;
+            padding: 1rem 0px;
+        };
+        .tab {
+            display: flex;
+            .tab-row {
+                padding: 1rem 0px;
+                flex-direction: column;
+                .c40,.c60,.c50,.c25 {
+                    width: 100%;
+                }
+                .c40 {
+                    padding: 0px 0px 1rem 0rem;
+                }            
+                .c60 {
+                    padding: 0px 0px 0px 0rem;
+                }
+            }
+        }        
+        .flex .drow {
+            flex-direction: column;
+        }
+        .project-grid .preview {
+            width: 100%;
+            .image {                
+                max-height: 1000px;
+                height: auto;
+            }
+        }
+        .c25.jc-r, .c25.jc-l {
+            text-align: center;            
+        }
+        .nm {
+            display: none;
+        }        
+        .gallery {
+            a {
+                width: 100%;
+            }
+        }
+        input::placeholder, textarea::placeholder {
+            font-size: 60 * $fscale;
+            font-style: italic;
+        }
+    }   
+}

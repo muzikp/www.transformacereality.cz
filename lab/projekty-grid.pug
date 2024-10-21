@@ -1,0 +1,15 @@
+- var i = 1;
+.project-grid
+	each projekt in projekty			
+		a.preview.inherit(href="/projekty/" + projekt.id)
+			.image.image-rectangles
+				img(src="/media/images/" + projekt.preview.url alt = projekt.preview.label)
+			.label
+				.year !{projekt.preview.year}
+				.text !{projekt.preview.label}
+		- i++;
+		- if(total && i > Number(total)) break;
+	if(total && total < projekty.length)
+		.btn-container
+			a.main-button(href="/projekty") další projekty
+				i.bi.bi-arrow-right

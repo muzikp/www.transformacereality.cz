@@ -1,0 +1,11 @@
+nav.navbar.navbar-expand-lg.white.pg
+	.container-fluid
+		a.navbar-brand(href="/" placeholder="Zpět na titulní stranu")
+			img.logo(src="/media/logo/TR_logo_Asset 3.svg" alt="Transformace Reality" class="d-inline-block align-text-top")
+		button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+			span.navbar-toggler-icon
+		#navbarNav.collapse.navbar-collapse
+			ul.navbar-nav.ms-auto
+				each section in sections
+					li.nav-item
+						a.nav-link.black(aria-current="page" data-section-id = section.id href=section.href) !{section.label}

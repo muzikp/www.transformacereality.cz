@@ -1,4 +1,12 @@
 extends layout.pug 
 
 block content
-    h1 !{message404}
+	.container-404
+		.logo
+			img(src="media/logo/TR_logo_Asset 7.svg" alt="Transformace Reality logo")
+		.msg Stránka nenalezena
+		br
+		br
+		.btn-container.center
+			a.main-button(href="/") zpět
+				i.bi.bi-arrow-right

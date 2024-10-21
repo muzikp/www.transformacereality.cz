@@ -3,7 +3,13 @@
 	"compilers": {
 		"ignore": [
 			"layout.pug",
-			"clocks.pug"
+			"clocks.pug",
+			"navbar.pug",
+			"footbar.pug",			
+			"kontakt.pug",
+			"rectimg.pug",
+			"projekty-grid.pug",
+			"poslani-template.pug"
 		],
 		"javascript": {
 			"minified": true,
@@ -17,11 +23,23 @@
 			"minified": true
 		},
 		"image": {
-			"default": "webp",
+			"default": "webp-medium",
 			"rules": [],
 			"styles": {
-				"webphigh": {
+				"webp-medium": {
 					"webp": {},
+					"modulate": {
+						"brightness": 1,
+						"saturation": 1,
+						"hue": 1,
+						"lightness": 1
+					}
+				},
+				"webp-high": {
+					"webp": {
+						"lossless": false,
+						"quality": 80
+					},
 					"modulate": {
 						"brightness": 1,
 						"saturation": 1,
@@ -33,23 +51,21 @@
 		}
 	},
 	"seo": {
-		"host": "",
+		"host": "https://www.simkovalegal.cz",
 		"sitemap": {
 			"auto": true,
 			"frequency": "daily",
 			"extensions": [
 				"html"
 			],
-			"ignore": []
+			"ignore": ["404", "404.html"]
 		},
 		"robots": {
 			"auto": true,
 			"content": [
-				"User-agent: Googlebot",
-				"Disallow: /nogooglebot/",
-				"",
 				"User-agent: *",
-				"Allow: /"
+				"Disallow:",
+				"Sitemap: https://www.simkovalegal.cz/sitemap.xml"
 			]
 		},
 		"google": {
@@ -57,8 +73,8 @@
 				"token": "GTM-N78979HC"
 			},
 			"ga": {
-				"token": ""
+				"token": "G-6XY6NPGGXL"
 			}
-		}
+		}		
 	}
 }

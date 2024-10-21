@@ -1,0 +1,82 @@
+extends layout
+
+block content
+	link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA==" crossorigin="anonymous" referrerpolicy="no-referrer")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js" integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer")
+	.banner
+	- var url = "/media/images/" + projekt.preview.url;
+	- var alt = projekt.preview.label
+	include rectimg.pug
+	br
+	br
+	h1.fs66 !{projekt.header}
+	.tab
+		if(projekt.texty.historie)
+			.tab-row
+				.c40
+					.text.fs20.fw600 Historie
+				.c60
+					.text.fs20.fw300 !{projekt.texty.historie}
+		if(projekt.texty.rekonstrukce)
+			.tab-row
+				.c40
+					.text.fs20.fw600 Rekonstrukce
+				.c60
+					.text.fs20.fw300 !{projekt.texty.rekonstrukce}
+		if(projekt.texty.soucasnost)
+			.tab-row
+				.c40
+					.text.fs20.fw600 Současnost
+				.c60
+					.text.fs20.fw300 !{projekt.texty.soucasnost}
+		.tab-row
+			.c40
+				.text.fs20.fw600 Informace o projektu
+			.c60
+				.tab
+					.tab-row.narrow.borderless
+						.c50
+							.fs20.fw600 Lokalita
+						.c50
+							.fs20.fw300 !{projekt.popis.lokalita.text}
+					.tab-row.narrow.borderless
+						.c50
+							b.fs20.fw600 Projektové práce
+						.c50
+							.fs20.fw300 !{projekt.popis.projektove_prace.text}
+					if(projekt.popis.realizace_rekonstrukce)
+						.tab-row.narrow.borderless
+							.c50
+								b.fs20.fw600 Realizace rekonstrukce
+							.c50
+								.fs20.fw300 !{projekt.popis.realizace_rekonstrukce.text}
+					.tab-row.narrow.borderless
+						.c50
+							b.fs20.fw600 !{projekt.popis.studio.label}
+						.c50
+							.fs20.fw300 !{projekt.popis.studio.text.join("<br>")}
+	- if(projekt.images.filter(i => i.group == "pred").length > 0);								
+		.gallery
+			//.header Před rekonstrukcí
+			each i in projekt.images
+				if(i.group == "pred")
+					- var title = projekt.header + " (" + (i.group == "pred" ? "před rekonstrukcí" : "po rekonstrukci") + ")";
+					a(href="/media/images/" + i.url data-lightbox=i.group data-alt=title data-title=title)
+						.thumbnail
+							img(src="/media/images/" + i.url alt=projekt.header)
+	- if(projekt.images.filter(i => i.group == "po").length > 0);
+		.gallery
+			//.header Po rekonstrukci
+			each i in projekt.images
+				if(i.group == "po")
+					- var title = projekt.header + " (" + (i.group == "pred" ? "před rekonstrukcí" : "po rekonstrukci") + ")";
+					a(href="/media/images/" + i.url data-lightbox=i.group data-alt=title data-title=title)
+						.thumbnail
+							img(src="/media/images/" + i.url alt=projekt.header)
+	br
+	br
+	.btn-container
+		a.main-button(href="/projekty") 
+			i.bi.bi-arrow-left(style="margin-right: 1rem;")
+			| ostatní projekty
+	include kontakt.pug

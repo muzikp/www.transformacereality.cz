@@ -38,7 +38,7 @@ $(()=> {
                             },
                             {
                                 title: 'Sledovací a výkonnostní soubory cookies',
-                                description: 'Tyto soubory cookies se používají ke shromažďování informací pro analýzu provozu na našich webových stránkách a sledování používání našich webových stránek uživateli.                             Tyto soubory cookies mohou například sledovat věci jako je doba kterou na webu trávíte, nebo stránky, které navštěvujete, což nám pomáhá pochopit, jak pro vás můžeme vylepšit náš web. Informace shromážděné prostřednictvím těchto sledovacích a výkonnostních cookies neidentifikují žádné osoby. Aktuálně využíváme služby Google Tag Manager a Google Analytics.',
+                                description: 'Tyto soubory cookies se používají ke shromažďování informací pro analýzu provozu na našich webových stránkách a sledování používání našich webových stránek uživateli. Tyto soubory cookies mohou například sledovat věci jako je doba kterou na webu trávíte, nebo stránky, které navštěvujete, což nám pomáhá pochopit, jak pro vás můžeme vylepšit náš web. Informace shromážděné prostřednictvím těchto sledovacích a výkonnostních cookies neidentifikují žádné osoby. Aktuálně využíváme služby Google Tag Manager a Google Analytics.',
                                 linkedCategory: 'analytics'
                             },
                             {
@@ -62,4 +62,3 @@ $(()=> {
     }
     CookieConsent.run(cookieConfig);
 });
-
