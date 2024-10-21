@@ -1,5 +1,5 @@
 {
-	"dev": true,
+	"dev": false,
 	"compilers": {
 		"ignore": [
 			"layout.pug",
@@ -51,10 +51,10 @@
 		}
 	},
 	"seo": {
-		"host": "https://www.simkovalegal.cz",
+		"host": "https://www.transformacereality.cz",
 		"sitemap": {
 			"auto": true,
-			"frequency": "daily",
+			"frequency": "weekly",
 			"extensions": [
 				"html"
 			],
@@ -65,7 +65,7 @@
 			"content": [
 				"User-agent: *",
 				"Disallow:",
-				"Sitemap: https://www.simkovalegal.cz/sitemap.xml"
+				"Sitemap: https://www.transformacereality.cz/sitemap.xml"
 			]
 		},
 		"google": {
