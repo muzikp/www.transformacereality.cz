@@ -9,7 +9,8 @@
 			"kontakt.pug",
 			"rectimg.pug",
 			"projekty-grid.pug",
-			"poslani-template.pug"
+			"poslani-template.pug",
+			"poslani.pug"
 		],
 		"javascript": {
 			"minified": true,

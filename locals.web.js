@@ -17,11 +17,13 @@ module.exports = {
     },
     phone: "+420 777 888 999",
     sections: [
+        /*
         {
             id: "poslani",
             label: "Poslání",
             href: "/poslani"
         },
+        */
         {
             id: "projekty",
             label: "Projekty",
@@ -100,47 +102,57 @@ module.exports = {
                 }
             },
             preview: {
-                url: "orfeus_001.webp",
+                url: "orfeus_002.webp",
                 label: "Multifunkční dům Orfeus",
                 year: 2017,
                 info: "",                                
             },
-            images: [
+            images: [             
                 {
                     url: "orfeus_001.webp",
-                    group: "po"
+                    group: "po",
+                    description: ""
                 },
                 {
                     url: "orfeus_002.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Dřevěná veranda propojuje prostor restaurace s kolonádou"
                 },
                 {
                     url: "orfeus_003.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Veranda ve stylu polabských hostinců"
                 },
                 {
                     url: "orfeus_004.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Hotel Papas a restaurace Náš hostinec"
                 },
+                {
+                    url: "orfeus_008.webp",
+                    group: "po",
+                    description: "Interiér restaurace Náš hostinec"
+                },
+                /*
                 {
                     url: "orfeus_005.webp",
                     group: "pred"
                 },
+                */
                 {
                     url: "orfeus_006.webp",
-                    group: "pred"
+                    group: "pred",
+                    description: "Čelní pohled před rekonstrukcí"
                 },
                 {
                     url: "orfeus_007.webp",
-                    group: "pred"
-                },
-                {
-                    url: "orfeus_008.webp",
-                    group: "po"
-                },
+                    group: "pred",
+                    description: "Boční pohled před rekonstrukcí"
+                },                
                 {
                     url: "orfeus_009.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Hotel Papas a restaurace Náš hostinec"
                 }
             ]
 
@@ -172,40 +184,48 @@ module.exports = {
                 }
             },
             preview: {
-                url: "ukolbabu_003.webp",
+                url: "ukolbabu_005.webp",
                 label: "Dům u Kolbabů",
                 year: 2014,
                 info: "",                                
             },
             images: [
+                /*
                 {
                     url: "ukolbabu_001.webp",
                     group: "pred"
                 },
+                */
                 {
                     url: "ukolbabu_002.webp",
-                    group: "pred"
+                    group: "pred",
+                    description: "Čelní pohled na dům před rekonstrukcí"
                 },
                 {
                     url: "ukolbabu_003.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Celkový pohled na dům"
                 },
                 {
                     url: "ukolbabu_004.webp",
-                    group: "po"
-                },
-                {
-                    url: "ukolbabu_005.webp",
-                    group: "po"
-                },
-                {
-                    url: "ukolbabu_006.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Původní okna po rekonstrukci"
                 },
                 {
                     url: "ukolbabu_007.webp",
-                    group: "po"
-                }
+                    group: "po",
+                    description: "Interiér restaurace Cucina"
+                },                
+                {
+                    url: "ukolbabu_006.webp",
+                    group: "po",
+                    description: "Mamma's Boutique Hotel a restaurace Cucina"
+                },
+                {
+                    url: "ukolbabu_005.webp",
+                    group: "po",
+                    description: "Mamma's Boutique Hotel a restaurace Cucina"
+                }                
             ]
         },
         {
@@ -243,25 +263,32 @@ module.exports = {
                 info: "",                                
             },
             images: [
+                /*
                 {
                     url: "dum17_001.webp",
-                    group: "pred"
+                    group: "pred",
+                    description: ""
                 },
+                */
                 {
                     url: "dum17_002.webp",
-                    group: "pred"
+                    group: "pred",
+                    description: "Boční pohled před rekonstrukcí"
                 },
                 {
                     url: "dum17_003.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Boční pohled po rekonstrukcí"
                 },
                 {
                     url: "dum17_004.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Čelní pohled po rekonstrukci"
                 },
                 {
                     url: "dum17_005.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Rodný dům matky Franze Kafky"
                 }
             ]
 
@@ -302,23 +329,29 @@ module.exports = {
             images: [
                 {
                     url: "uvanu_001.webp",
-                    group: "pred"
+                    group: "po",
+                    description: "Interiér po rekonstrukci"
                 },
                 {
-                    url: "uvanu_001.webp",                    
-                    group: "po"
-                },
-                {
-                    url: "uvanu_002.webp",
-                    group: "po"
+                    url: "uvanu_002.webp",                    
+                    group: "po",
+                    description: "Interiér po rekonstrukci"
                 },
                 {
                     url: "uvanu_003.webp",
-                    group: "po"
-                },                
+                    group: "po",
+                    description: "Exteriér po rekonstrukci"
+                },/*
                 {
                     url: "uvanu_005.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Exteriér"
+                },
+                */
+                {
+                    url: "uvanu_004.webp",
+                    group: "pred",
+                    description: "Interiér původného rekonstruovaného schodiště"
                 }
             ]
 
@@ -355,11 +388,13 @@ module.exports = {
             images: [
                 {
                     url: "meetnice_001.webp",
-                    group: "po"
+                    group: "po",
+                    description: ""
                 },
                 {
                     url: "meetnice_002.webp",
-                    group: "po"
+                    group: "po",
+                    description: "Pohled z mostu"
                 }
             ]
 

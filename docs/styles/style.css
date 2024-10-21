@@ -6,6 +6,9 @@ body {
   /* image rectangles */
   /* Animace pro pozadí */
 }
+body .navbar {
+  background-color: rgb(232, 232, 232) !important;
+}
 body .nav-item {
   text-align: center;
 }
@@ -60,6 +63,12 @@ body .fw900 {
 }
 body .fw600 {
   font-weight: 600;
+}
+body .fw500 {
+  font-weight: 500;
+}
+body .fw400 {
+  font-weight: 400;
 }
 body .fw300 {
   font-weight: 300;
@@ -234,11 +243,12 @@ body .project-grid .preview {
   width: 50%;
 }
 body .project-grid .preview .image {
-  height: 400px;
   overflow: hidden;
 }
 body .project-grid .preview img {
   max-width: 100%;
+  aspect-ratio: 6/4;
+  object-fit: cover;
 }
 body .project-grid .preview .label {
   display: flex;
@@ -302,7 +312,7 @@ body .image-rectangles .headline {
   position: absolute;
   font-size: 3.3vw;
   color: white;
-  top: 50%;
+  top: 65%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
@@ -345,8 +355,11 @@ body .gallery a {
 }
 body .gallery .thumbnail {
   width: 100%;
-  max-height: 450px;
   overflow: hidden;
+}
+body .gallery .thumbnail img {
+  aspect-ratio: 6/4;
+  object-fit: cover;
 }
 body .gallery .header {
   padding-top: 2rem;

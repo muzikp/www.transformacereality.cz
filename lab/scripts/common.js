@@ -17,8 +17,7 @@ $(function(){
                 iziToast.success({
                     title: 'Odesláno',
                     message: 'Vaše zpráva byla úspěšně odeslána.'
-                });
-                //$(".contact-form").find(`[type="submit"]`).attr("disabled", false).prop("disabled", false);
+                });                
             },            
             error: function(xhr, status, error) {                
                 iziToast.error({

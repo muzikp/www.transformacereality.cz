@@ -2,7 +2,7 @@
 .project-grid
 	each projekt in projekty			
 		a.preview.inherit(href="/projekty/" + projekt.id)
-			.image.image-rectangles
+			.image
 				img(src="/media/images/" + projekt.preview.url alt = projekt.preview.label)
 			.label
 				.year !{projekt.preview.year}

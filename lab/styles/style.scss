@@ -16,6 +16,9 @@ $mobile_breakpoint: 992px;
 
 body {    
     background-color: $gray1 !important;
+    .navbar {
+        background-color: $gray1 !important;
+    }
     .nav-item {
         text-align: center;
     }
@@ -70,6 +73,12 @@ body {
     };
     .fw600 {
         font-weight: 600;
+    }
+    .fw500 {
+        font-weight: 500;
+    }
+    .fw400 {
+        font-weight: 400;
     }
     .fw300 {
         font-weight: 300;
@@ -248,11 +257,13 @@ body {
             flex-direction: column;
             width: 50%;
             .image {
-                height: 400px;
+                //height: 400px;
                 overflow: hidden;
             }           
             img {
                 max-width: 100%;
+                aspect-ratio: 6/4;
+                object-fit: cover;
             };                        
             .label {
                 display: flex;
@@ -325,7 +336,7 @@ body {
             position: absolute;
             font-size: 3.3vw;
             color: white;
-            top: 50%;
+            top: 65%;
             left: 0;
             right: 0;
             transform: translateY(-50%);
@@ -371,8 +382,12 @@ body {
         }
         .thumbnail {
             width: 100%;
-            max-height: 450px;
+            //max-height: 450px;
             overflow: hidden;
+            img {
+                aspect-ratio: 6/4;
+                object-fit: cover;
+            }
         }
         .header {
             padding-top: 2rem;

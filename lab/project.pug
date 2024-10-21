@@ -9,7 +9,7 @@ block content
 	include rectimg.pug
 	br
 	br
-	h1.fs66 !{projekt.header}
+	h1.fs66.fw500 !{projekt.header}
 	.tab
 		if(projekt.texty.historie)
 			.tab-row
@@ -56,21 +56,18 @@ block content
 							b.fs20.fw600 !{projekt.popis.studio.label}
 						.c50
 							.fs20.fw300 !{projekt.popis.studio.text.join("<br>")}
-	- if(projekt.images.filter(i => i.group == "pred").length > 0);								
-		.gallery
-			//.header Před rekonstrukcí
+	.gallery
+		- if(projekt.images.filter(i => i.group == "po").length > 0);
 			each i in projekt.images
-				if(i.group == "pred")
-					- var title = projekt.header + " (" + (i.group == "pred" ? "před rekonstrukcí" : "po rekonstrukci") + ")";
+				if(i.group == "po")
+					- var title = projekt.header + " (" + (i.group == "pred" ? "před rekonstrukcí" : "po rekonstrukci") + ")" + (i.description ? "<br>" + i.description : "");
 					a(href="/media/images/" + i.url data-lightbox=i.group data-alt=title data-title=title)
 						.thumbnail
 							img(src="/media/images/" + i.url alt=projekt.header)
-	- if(projekt.images.filter(i => i.group == "po").length > 0);
-		.gallery
-			//.header Po rekonstrukci
+		- if(projekt.images.filter(i => i.group == "pred").length > 0);			
 			each i in projekt.images
-				if(i.group == "po")
-					- var title = projekt.header + " (" + (i.group == "pred" ? "před rekonstrukcí" : "po rekonstrukci") + ")";
+				if(i.group == "pred")
+					- var title = projekt.header + " (" + (i.group == "pred" ? "před rekonstrukcí" : "po rekonstrukci") + ")" + (i.description ? "<br>" + i.description : "");
 					a(href="/media/images/" + i.url data-lightbox=i.group data-alt=title data-title=title)
 						.thumbnail
 							img(src="/media/images/" + i.url alt=projekt.header)
