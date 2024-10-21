@@ -1,6 +1,20 @@
 /* this module is accessible from each pug file */
 
-module.exports = {
+module.exports = {    
+    pages: {
+        home: {
+            title: "Transformace Reality",
+            description: "Již více než 20 let s naším zkušeným týmem proměňujeme zajímavé nemovitosti a vdechujeme jim nový život."
+        },
+        poslani: {
+            title: "Naše poslání", 
+            description: "Jsme tu pro vás, připraveni vaše nápady a sny transformovat v novou realitu."
+        },
+        projekty: {
+            title: "Naše projekty", 
+            description: "Multifunkční dům Orfeus, dům U Kolbabů a další"
+        },
+    },
     phone: "+420 777 888 999",
     sections: [
         {

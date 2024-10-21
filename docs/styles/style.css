@@ -6,8 +6,12 @@ body {
   /* image rectangles */
   /* Animace pro pozadí */
 }
+body .nav-item {
+  text-align: center;
+}
 body .content {
-  padding: 20px 10%;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 body .section {
   padding-top: 3rem;
@@ -32,22 +36,24 @@ body .text.no-bp {
   margin-bottom: 0rem;
 }
 body .fs66 {
-  font-size: 3.3vw;
+  font-size: 2.64vw;
 }
 body .fs36 {
-  font-size: 1.8vw;
+  font-size: 1.44vw;
 }
 body .fs20 {
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 body .fs15 {
-  font-size: 0.75vw;
+  font-size: 0.6vw;
 }
 body .fsp0 {
   letter-spacing: 0px;
 }
 body input::placeholder, body textarea::placeholder {
-  font-size: 1vw;
+  font-size: 0.8vw;
+  font-style: italic;
+  color: rgb(0, 98, 166);
 }
 body .fw900 {
   font-weight: 900;
@@ -348,7 +354,7 @@ body .gallery .header {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 3.3vw;
+  font-size: 2.64vw;
   font-weight: 600;
   color: rgb(0, 98, 166);
 }
@@ -394,7 +400,7 @@ body .container-404 .logo img {
 body .container-404 .msg {
   width: 100%;
   text-align: center;
-  font-size: 3.3vw; /* Přizpůsobení velikosti textu */
+  font-size: 2.64vw; /* Přizpůsobení velikosti textu */
   font-weight: 600; /* Nastavení tloušťky písma */
   color: rgb(0, 98, 166); /* Barva textu */
 }
@@ -470,7 +476,13 @@ body .no-padding {
     width: 100%;
   }
   body input::placeholder, body textarea::placeholder {
-    font-size: 3vw;
+    font-size: 2.4vw;
     font-style: italic;
+  }
+  body .nav-item:first-child {
+    margin-top: 2rem;
+  }
+  body .navbar-collapse {
+    border-bottom: solid 1px rgb(186, 186, 186);
   }
 }

@@ -39,11 +39,12 @@ block content
 							.fs20.fw600 Lokalita
 						.c50
 							.fs20.fw300 !{projekt.popis.lokalita.text}
-					.tab-row.narrow.borderless
-						.c50
-							b.fs20.fw600 Projektové práce
-						.c50
-							.fs20.fw300 !{projekt.popis.projektove_prace.text}
+					if(projekt.popis.projektove_prace.text)
+						.tab-row.narrow.borderless
+							.c50
+								b.fs20.fw600 Projektové práce
+							.c50
+								.fs20.fw300 !{projekt.popis.projektove_prace.text}
 					if(projekt.popis.realizace_rekonstrukce)
 						.tab-row.narrow.borderless
 							.c50
