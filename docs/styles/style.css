@@ -264,7 +264,7 @@ body .project-grid .preview .label .text {
 body a.inherit {
   text-decoration: none;
 }
-body .avatar {
+body .avatar img {
   max-width: 100%;
   border-radius: 5px;
 }
@@ -283,6 +283,8 @@ body .image-rectangles img {
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
+  bottom: 25%;
 }
 body .image-rectangles .r1 {
   top: 0;
@@ -312,7 +314,7 @@ body .image-rectangles .headline {
   position: absolute;
   font-size: 3.3vw;
   color: white;
-  top: 65%;
+  top: 75%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
@@ -498,5 +500,12 @@ body .no-padding {
   }
   body .navbar-collapse {
     border-bottom: solid 1px rgb(186, 186, 186);
+  }
+  body .avatar {
+    text-align: center;
+  }
+  body .avatar img {
+    max-width: 50%;
+    justify-content: center;
   }
 }

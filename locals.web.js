@@ -16,14 +16,12 @@ module.exports = {
         },
     },
     phone: "+420 777 888 999",
-    sections: [
-        /*
+    sections: [        
         {
             id: "poslani",
-            label: "Poslání",
-            href: "/poslani"
-        },
-        */
+            label: "O nás",
+            href: "/#poslani"
+        },        
         {
             id: "projekty",
             label: "Projekty",
@@ -107,12 +105,7 @@ module.exports = {
                 year: 2017,
                 info: "",                                
             },
-            images: [             
-                {
-                    url: "orfeus_001.webp",
-                    group: "po",
-                    description: ""
-                },
+            images: [                             
                 {
                     url: "orfeus_002.webp",
                     group: "po",
@@ -129,6 +122,11 @@ module.exports = {
                     description: "Hotel Papas a restaurace Náš hostinec"
                 },
                 {
+                    url: "orfeus_001.webp",
+                    group: "po",
+                    description: ""
+                },
+                {
                     url: "orfeus_008.webp",
                     group: "po",
                     description: "Interiér restaurace Náš hostinec"
@@ -138,7 +136,12 @@ module.exports = {
                     url: "orfeus_005.webp",
                     group: "pred"
                 },
-                */
+                */                              
+                {
+                    url: "orfeus_009.webp",
+                    group: "po",
+                    description: "Hotel Papas a restaurace Náš hostinec"
+                },
                 {
                     url: "orfeus_006.webp",
                     group: "pred",
@@ -148,11 +151,6 @@ module.exports = {
                     url: "orfeus_007.webp",
                     group: "pred",
                     description: "Boční pohled před rekonstrukcí"
-                },                
-                {
-                    url: "orfeus_009.webp",
-                    group: "po",
-                    description: "Hotel Papas a restaurace Náš hostinec"
                 }
             ]
 
@@ -195,12 +193,7 @@ module.exports = {
                     url: "ukolbabu_001.webp",
                     group: "pred"
                 },
-                */
-                {
-                    url: "ukolbabu_002.webp",
-                    group: "pred",
-                    description: "Čelní pohled na dům před rekonstrukcí"
-                },
+                */                
                 {
                     url: "ukolbabu_003.webp",
                     group: "po",
@@ -225,7 +218,12 @@ module.exports = {
                     url: "ukolbabu_005.webp",
                     group: "po",
                     description: "Mamma's Boutique Hotel a restaurace Cucina"
-                }                
+                },
+                {
+                    url: "ukolbabu_002.webp",
+                    group: "pred",
+                    description: "Čelní pohled na dům před rekonstrukcí"
+                }               
             ]
         },
         {
@@ -269,12 +267,7 @@ module.exports = {
                     group: "pred",
                     description: ""
                 },
-                */
-                {
-                    url: "dum17_002.webp",
-                    group: "pred",
-                    description: "Boční pohled před rekonstrukcí"
-                },
+                */                
                 {
                     url: "dum17_003.webp",
                     group: "po",
@@ -289,6 +282,11 @@ module.exports = {
                     url: "dum17_005.webp",
                     group: "po",
                     description: "Rodný dům matky Franze Kafky"
+                },
+                {
+                    url: "dum17_002.webp",
+                    group: "pred",
+                    description: "Boční pohled před rekonstrukcí"
                 }
             ]
 
@@ -341,13 +339,12 @@ module.exports = {
                     url: "uvanu_003.webp",
                     group: "po",
                     description: "Exteriér po rekonstrukci"
-                },/*
+                },
                 {
                     url: "uvanu_005.webp",
                     group: "po",
-                    description: "Exteriér"
-                },
-                */
+                    description: "Exteriér po rekonstrukci"
+                },                
                 {
                     url: "uvanu_004.webp",
                     group: "pred",

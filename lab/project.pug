@@ -57,20 +57,11 @@ block content
 						.c50
 							.fs20.fw300 !{projekt.popis.studio.text.join("<br>")}
 	.gallery
-		- if(projekt.images.filter(i => i.group == "po").length > 0);
-			each i in projekt.images
-				if(i.group == "po")
-					- var title = projekt.header + " (" + (i.group == "pred" ? "před rekonstrukcí" : "po rekonstrukci") + ")" + (i.description ? "<br>" + i.description : "");
-					a(href="/media/images/" + i.url data-lightbox=i.group data-alt=title data-title=title)
-						.thumbnail
-							img(src="/media/images/" + i.url alt=projekt.header)
-		- if(projekt.images.filter(i => i.group == "pred").length > 0);			
-			each i in projekt.images
-				if(i.group == "pred")
-					- var title = projekt.header + " (" + (i.group == "pred" ? "před rekonstrukcí" : "po rekonstrukci") + ")" + (i.description ? "<br>" + i.description : "");
-					a(href="/media/images/" + i.url data-lightbox=i.group data-alt=title data-title=title)
-						.thumbnail
-							img(src="/media/images/" + i.url alt=projekt.header)
+		each i in projekt.images			
+			- var title = projekt.header + " (" + (i.group == "pred" ? "před rekonstrukcí" : "po rekonstrukci") + ")" + (i.description ? "<br>" + i.description : "");
+			a(href="/media/images/" + i.url data-lightbox="galerie" data-alt=title data-title=title)
+				.thumbnail
+					img(src="/media/images/" + i.url alt=projekt.header)
 	br
 	br
 	.btn-container

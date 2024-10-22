@@ -282,8 +282,10 @@ body {
         text-decoration: none;
     }
     .avatar {
-        max-width: 100%;
-        border-radius: 5px;
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
     }
     /* image rectangles */ 
     .image-rectangles {
@@ -302,6 +304,8 @@ body {
             display: block;
             width: 100%;
             height: auto;
+            position: relative;
+            bottom: 25%;
         }
     
         .r1 {
@@ -336,7 +340,7 @@ body {
             position: absolute;
             font-size: 3.3vw;
             color: white;
-            top: 65%;
+            top: 75%;
             left: 0;
             right: 0;
             transform: translateY(-50%);
@@ -539,6 +543,14 @@ body {
         }
         .navbar-collapse {
             border-bottom: solid 1px $gray4;
+        }
+        .avatar {
+            img {
+                max-width: 50%;
+                justify-content: center;
+            }
+            text-align: center;
+
         }
     }   
 }
