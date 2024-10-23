@@ -347,7 +347,7 @@ module.exports = {
                 },                
                 {
                     url: "uvanu_004.webp",
-                    group: "pred",
+                    group: "po",
                     description: "Interiér původního rekonstruovaného schodiště."
                 }
             ]
