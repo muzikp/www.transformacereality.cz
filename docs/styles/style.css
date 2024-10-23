@@ -6,6 +6,20 @@ body {
   /* image rectangles */
   /* Animace pro pozadí */
 }
+body .image:after, body .thumbnail:after {
+  content: ""; /* Prázdný obsah pro SVG */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: url("/media/logo/TR_logo_Asset 4.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 10;
+}
 body .navbar {
   background-color: rgb(232, 232, 232) !important;
 }
@@ -221,6 +235,7 @@ body .np {
   padding: 0px;
 }
 body .btn-container {
+  padding-top: 2rem;
   width: 100%;
   display: flex;
   justify-content: end;
@@ -237,29 +252,35 @@ body .project-grid {
   width: 100%;
 }
 body .project-grid .preview {
-  padding-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  display: block;
   width: 50%;
 }
 body .project-grid .preview .image {
   overflow: hidden;
+  position: relative;
+  top: 0%;
 }
 body .project-grid .preview img {
   max-width: 100%;
   aspect-ratio: 6/4;
-  object-fit: cover;
+  object-fit: fill;
 }
 body .project-grid .preview .label {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(50, 50, 50, 0.5);
+  padding: 0.5rem;
   display: flex;
   justify-items: start;
 }
 body .project-grid .preview .label .year {
-  color: rgb(186, 186, 186);
+  color: white;
   padding-right: 1rem;
 }
 body .project-grid .preview .label .text {
-  color: rgb(77, 77, 77);
+  color: white;
 }
 body a.inherit {
   text-decoration: none;
@@ -357,6 +378,8 @@ body .gallery a {
 }
 body .gallery .thumbnail {
   width: 100%;
+  position: relative;
+  top: 0;
   overflow: hidden;
 }
 body .gallery .thumbnail img {

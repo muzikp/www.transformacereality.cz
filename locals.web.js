@@ -15,7 +15,7 @@ module.exports = {
             description: "Multifunkční dům Orfeus, dům U Kolbabů a další"
         },
     },
-    phone: "+420 777 888 999",
+    phone: "+420 602 119 978",
     sections: [        
         {
             id: "poslani",
@@ -72,7 +72,7 @@ module.exports = {
         {
             rank: 1,
             id: "orfeus",
-            header: "Rekonstrukce hotelu Orfeus, Poděbrady",
+            header: "Multifunkční dům Orfeus (Náš Hostinec, hotel Papas)",
             texty: {
                 historie: "Budova hotelu Orfeus vznikla v období reálného socialismu, kdy došlo ke sloučení penzionu Tatra v Tyršově ulici a hotelového objektu Orfeus směrem k lázeňské kolonádě. Přestavba se vyznačovala účelovým designem, typickým pro svou dobu, který bohužel postrádal ohledy na praktické uspořádání a estetiku. Komplikované dispozice, nevyhovující interiér a především fasáda nového objektu neměly architektonické vazby na přilehlou lázeňskou promenádu. Nevhodné zvýšení přízemí nad úroveň terénu ztížilo přístup k hotelu a restauraci, které byly dosažitelné pouze po rampách a schodištích zasazených do uměle vytvořených předzahrádek.",
                 rekonstrukce: "Cílem rekonstrukce bylo otevřít parter a vytvořit prostor, který by přímo navazoval na poděbradskou kolonádu, a to jak vizuálně, tak provozně. Původní architektura byla zbavena dodatečných přístaveb a textur, fasáda byla sjednocena jednoduchým rastrem francouzských oken. Historii dvou původních domů připomíná nenápadný akcent nároží v Tyršově ulici, zdobený jemnou plastikou bosáže, která přechází z kolonády do ulice. Architektura byla obohacena o střešní nástavbu, ale nejvýraznější změnou je přeměna prostoru před hotelem, kde byla přidána přízemní přístavba. Tato nová dřevěná veranda ve stylu polabských hostinců z období první republiky, dotváří charakter prostoru. Motiv verandy se promítl také do interiérů a vybavení restaurace, která se dnes řadí mezi nejoblíbenější místa na kolonádě.",
@@ -100,8 +100,8 @@ module.exports = {
                 }
             },
             preview: {
-                url: "orfeus_002.webp",
-                label: "Multifunkční dům Orfeus",
+                url: "orfeus_001.webp",
+                label: "Multifunkční dům Orfeus (Náš Hostinec, hotel Papas)",
                 year: 2017,
                 info: "",                                
             },
@@ -145,12 +145,12 @@ module.exports = {
                 {
                     url: "orfeus_006.webp",
                     group: "pred",
-                    description: "Čelní pohled před rekonstrukcí"
+                    description: "Čelní pohled"
                 },
                 {
                     url: "orfeus_007.webp",
                     group: "pred",
-                    description: "Boční pohled před rekonstrukcí"
+                    description: "Boční pohled"
                 }
             ]
 
@@ -158,7 +158,7 @@ module.exports = {
         {
             rank: 2,
             id: "ukolbabu",
-            header: "Rekonstrukce domu U Kolbabů, Poděbrady",
+            header: "Dům U Kolbabů (Cucina, Mamma's Boutique hotel)",
             texty: {
                 historie: "Dům U Kolbabů, původně postavený ve 30. letech 20. století, se nachází na kolonádě v lázeňském městě Poděbrady. Jedná se o pětipodlažní, kompletně podsklepený objekt, který byl před zahájením rekonstrukce neobývaný.",
                 rekonstrukce: "Objekt se nachází v památkové zóně, což vyžadovalo citlivý přístup k rekonstrukci a dílčích úpravách fasády, aby byl zachován autentický charakter 30. let. Stavební úpravy vedly k vytvoření polyfunkčních prostor, přičemž počet bytových jednotek byl snížen z původních devíti na pět. V rámci rekonstrukce byl instalován nový výtah, přístupný z podesty schodiště na každém podlaží. Dále bylo vytvořeno osm krytých a tři nekrytá parkovací stání.",
@@ -183,7 +183,7 @@ module.exports = {
             },
             preview: {
                 url: "ukolbabu_005.webp",
-                label: "Dům u Kolbabů",
+                label: "Dům U Kolbabů (Cucina, Mamma's Boutique hotel)",
                 year: 2014,
                 info: "",                                
             },
@@ -222,14 +222,14 @@ module.exports = {
                 {
                     url: "ukolbabu_002.webp",
                     group: "pred",
-                    description: "Čelní pohled na dům před rekonstrukcí"
+                    description: "Čelní pohled na dům"
                 }               
             ]
         },
         {
             rank: 3,
             id: "dum17",
-            header: "Rekonstrukce domu č. p. 17, Poděbrady",
+            header: "Dům č. p. 17, Jiřího náměstí",
             texty: {
                 historie: "Dům č. p. 17 se nachází v historickém jádru města Poděbrady, na území městské památkové zóny. Původně byl dům částečně podsklepený, se dvěma nadzemními podlažími a půdním prostorem. Před zahájením rekonstrukce nebyl objekt využíván.",
                 rekonstrukce: "Cílem rekonstrukce dlouhodobě nevyužívané budovy bylo obnovit její funkčnost a adaptovat ji pro komerční účely, s částečným využitím podkroví pro rodinné bydlení. V rámci stavebních prací byly rovněž realizovány nové inženýrské sítě, včetně přípojek plynu, splaškové kanalizace a vodovodu.",
@@ -256,7 +256,7 @@ module.exports = {
             },
             preview: {
                 url: "dum17_003.webp",
-                label: "Dům č. 17 v Poděbradech",
+                label: "Dům č. p. 17, Jiřího náměstí",
                 year: 2012,
                 info: "",                                
             },
@@ -271,12 +271,12 @@ module.exports = {
                 {
                     url: "dum17_003.webp",
                     group: "po",
-                    description: "Boční pohled po rekonstrukcí"
+                    description: "Boční pohled"
                 },
                 {
                     url: "dum17_004.webp",
                     group: "po",
-                    description: "Čelní pohled po rekonstrukci"
+                    description: "Čelní pohled"
                 },
                 {
                     url: "dum17_005.webp",
@@ -286,7 +286,7 @@ module.exports = {
                 {
                     url: "dum17_002.webp",
                     group: "pred",
-                    description: "Boční pohled před rekonstrukcí"
+                    description: "Boční pohled"
                 }
             ]
 
@@ -294,7 +294,7 @@ module.exports = {
         {
             rank: 4,
             id: "uvanu",
-            header: "Rekonstrukce baru U Váňů, Poděbrady",
+            header: "Bar U Váňů",
             texty: {
                 historie: "Bar U Váňů se nachází v suterénu historické budovy v centru Poděbrad. Tato budova má bohatou minulost, která se odráží v její architektuře a atmosféře. Staré cihlové oblouky, které dominují interiéru, jsou připomínkou dob minulých a dotvářejí jedinečnou atmosféru tohoto místa.",
                 rekonstrukce: "Při rekonstrukci bylo klíčovým cílem zachovat původní ráz budovy, zároveň však přinést moderní prvky a zlepšit funkčnost prostoru. Staré prosvětlené cihlové oblouky byly citlivě opraveny a integrované do nového designu. Pro dosažení vzdušnosti a světlosti interiéru byly použity světlé barvy. Moderní design v podobě geometrické grafiky na stěnách tvoří zajímavý kontrast s historickými prvky. Bar z nerezové oceli a kovu, spolu se schodištěm a židlemi, byly zvoleny jako temnější akcenty pro vyvážení celkového dojmu.",
@@ -320,7 +320,7 @@ module.exports = {
             },
             preview: {
                 url: "uvanu_003.webp",
-                label: "Bar u Váňů",
+                label: "Bar U Váňů",
                 year: 2012,
                 info: "",                                
             },
@@ -328,27 +328,27 @@ module.exports = {
                 {
                     url: "uvanu_001.webp",
                     group: "po",
-                    description: "Interiér po rekonstrukci"
+                    description: "Interiér"
                 },
                 {
                     url: "uvanu_002.webp",                    
                     group: "po",
-                    description: "Interiér po rekonstrukci"
+                    description: "Interiér"
                 },
                 {
                     url: "uvanu_003.webp",
                     group: "po",
-                    description: "Exteriér po rekonstrukci"
+                    description: "Exteriér"
                 },
                 {
                     url: "uvanu_005.webp",
                     group: "po",
-                    description: "Exteriér po rekonstrukci"
+                    description: "Exteriér"
                 },                
                 {
                     url: "uvanu_004.webp",
                     group: "pred",
-                    description: "Interiér původného rekonstruovaného schodiště"
+                    description: "Interiér původního rekonstruovaného schodiště."
                 }
             ]
 
@@ -356,7 +356,7 @@ module.exports = {
         {
             rank: 5,
             id: "meetnice",
-            header: "Meetnice, Poděbrady I",
+            header: "Restaurace Meetnice",
             texty: {
                 historie: "Původně sloužil objekt jako rodinný dům, jehož atraktivní poloha na břehu řeky Labe nabízela potenciál pro širší občanské využití.",
                 rekonstrukce: "Při rekonstrukci rodinného domu byl důraz kladen na jeho jedinečnou polohu a snadnou dostupnost. Budova prošla kompletní a náročnou přestavbou, díky které se proměnila na stylovou restauraci s prostornou venkovní terasou a útulným podkrovním bytem.",
@@ -378,7 +378,7 @@ module.exports = {
             },
             preview: {
                 url: "meetnice_001.webp",
-                label: "Meetnice",
+                label: "Restaurace Meetnice",
                 year: 2000,
                 info: "",                                
             },

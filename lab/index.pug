@@ -1,11 +1,11 @@
 extends layout
 
 block content
-	- var url = "/media/images/orfeus_001.webp";
+	- var url = "/media/images/orfeus_002.webp";
 	- var headline = "Stavíme na <u>tradicích</u>,<br>měníme budoucnost.";
 	- var alt = "Multifunkční dům Orfeus";
 	include rectimg.pug	
-	include poslani-template.pug
+	include poslani-template.pu g
 	#projekty.section
 		- var total = 4;
 		include projekty-grid.pug
@@ -15,7 +15,7 @@ block content
 			each sluzba in sluzby.full
 				.tab-row
 					.c40.no-padding
-						.text.fs20.fw400 !{sluzba.header}
+						.text.fs20.fw600 !{sluzba.header}
 					.c60.no-padding
 						.text.fs20.fw300 !{sluzba.text}	
 	include kontakt.pug

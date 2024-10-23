@@ -15,6 +15,20 @@ $rectangle-unit: 100vw * 0.08;
 $mobile_breakpoint: 992px;
 
 body {    
+    .image:after, .thumbnail:after {
+        content: ''; /* Prázdný obsah pro SVG */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 100px;
+        height: 100px;
+        background-image: url('/media/logo/TR_logo_Asset 4.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+        pointer-events: none;
+        z-index: 10;
+    }
     background-color: $gray1 !important;
     .navbar {
         background-color: $gray1 !important;
@@ -237,6 +251,7 @@ body {
         padding: 0px;
     }
     .btn-container {
+        padding-top: 2rem;
         width: 100%;
         display: flex;
         justify-content: end;
@@ -251,29 +266,35 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;        
-        .preview {
-            padding-bottom: 1.5rem;
-            display: flex;
-            flex-direction: column;
+        .preview {            
+            position: relative;
+            display: block;
             width: 50%;
-            .image {
-                //height: 400px;
+            .image {                
                 overflow: hidden;
+                position: relative;
+                top: 0%;
             }           
             img {
                 max-width: 100%;
                 aspect-ratio: 6/4;
-                object-fit: cover;
+                object-fit: fill;
             };                        
             .label {
+                width: 100%;
+                position: absolute;
+                bottom: 0 ;                
+                background-color: rgba(50,50,50,0.5);
+                padding: 0.5rem;
                 display: flex;
                 justify-items: start;
+
                 .year {
-                    color: $gray4;
+                    color: white;
                     padding-right: 1rem;
                 }
                 .text {
-                    color: $gray8;
+                    color: white;
                 }
             }
         }
@@ -386,7 +407,8 @@ body {
         }
         .thumbnail {
             width: 100%;
-            //max-height: 450px;
+            position: relative;
+            top: 0;
             overflow: hidden;
             img {
                 aspect-ratio: 6/4;

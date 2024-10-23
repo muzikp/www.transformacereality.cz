@@ -5,8 +5,8 @@
 			.image
 				img(src="/media/images/" + projekt.preview.url alt = projekt.preview.label)
 			.label
-				.year !{projekt.preview.year}
-				.text !{projekt.preview.label}
+				.year.fs20 !{projekt.preview.year}
+				.text.fs20 !{projekt.preview.label}
 		- i++;
 		- if(total && i > Number(total)) break;
 	if(total && total < projekty.length)
