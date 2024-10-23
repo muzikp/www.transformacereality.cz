@@ -15,6 +15,19 @@ $rectangle-unit: 100vw * 0.08;
 $mobile_breakpoint: 992px;
 
 body {    
+    .image, .thumbnail {
+        position: relative;
+        width: 100%;
+        padding-top: 66.6666666%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* nebo contain, podle potřeby */
+        }
+    }
     .image:after, .thumbnail:after {
         content: ''; /* Prázdný obsah pro SVG */
         position: absolute;
