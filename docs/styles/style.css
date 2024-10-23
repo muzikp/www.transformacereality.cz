@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 body {
+  /* watermark */
   background-color: rgb(232, 232, 232) !important;
   /* image rectangles */
   /* Animace pro pozadí */
@@ -19,8 +20,8 @@ body .image img, body .thumbnail img {
   height: 100%;
   object-fit: cover; /* nebo contain, podle potřeby */
 }
-body .image:after, body .thumbnail:after {
-  content: ""; /* Prázdný obsah pro SVG */
+body .image:after, body .thumbnail:after, body .lb-container:after {
+  content: "";
   position: absolute;
   top: 10px;
   left: 10px;
@@ -29,7 +30,7 @@ body .image:after, body .thumbnail:after {
   background-image: url("/media/logo/TR_logo_Asset 4.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: 0.7;
   pointer-events: none;
   z-index: 10;
 }

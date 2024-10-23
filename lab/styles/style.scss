@@ -28,8 +28,9 @@ body {
             object-fit: cover; /* nebo contain, podle potřeby */
         }
     }
-    .image:after, .thumbnail:after {
-        content: ''; /* Prázdný obsah pro SVG */
+    /* watermark */
+    .image:after, .thumbnail:after, .lb-container:after  {
+        content: '';
         position: absolute;
         top: 10px;
         left: 10px;
@@ -38,7 +39,7 @@ body {
         background-image: url('/media/logo/TR_logo_Asset 4.svg');
         background-size: contain;
         background-repeat: no-repeat;
-        opacity: 0.4;
+        opacity: 0.7;
         pointer-events: none;
         z-index: 10;
     }

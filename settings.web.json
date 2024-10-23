@@ -28,7 +28,10 @@
 			"rules": [],
 			"styles": {
 				"webp-medium": {
-					"webp": {},
+					"webp": {
+						"lossless": false,
+						"quality": 50
+					},
 					"modulate": {
 						"brightness": 1,
 						"saturation": 1,
