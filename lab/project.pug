@@ -10,6 +10,9 @@ block content
 	br
 	br
 	h1.fs66.fw500 !{projekt.header}
+	if(projekt.future)
+		br
+		.fs36.fw300 Připravovaný projekt
 	.tab
 		each ht in projekt.texty					
 			.tab-row

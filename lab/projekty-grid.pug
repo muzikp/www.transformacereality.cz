@@ -3,10 +3,10 @@
 	each projekt in (projekty.sort((a,b) => a.rank > b.rank ? 1 : a.rank < b.rank ? -1 : 0))
 		a.preview.inherit(href="/projekty/" + projekt.id)
 			.image
-				img(src="/media/images/" + projekt.preview.url alt = projekt.preview.label)
+				img( src="/media/images/" + projekt.preview.url alt = projekt.preview.label)
 			.label
 				.year.fs20 !{projekt.preview.year}
-				.text.fs20 !{projekt.preview.label}
+				.text.fs20 !{projekt.preview.label + (projekt.future ? " (připravovaný projekt)" : "")}
 		- i++;
 		- if(total && i > Number(total)) break;
 	if(total && total < projekty.length)

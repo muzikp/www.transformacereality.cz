@@ -73,6 +73,7 @@ module.exports = {
         {
             rank: 0,
             id: "ulabe",
+            future: true,
             header: "Bytový dům u Labe, Paroubkova ulice ",
             texty: [
                 {
