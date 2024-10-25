@@ -322,6 +322,7 @@ body .image-rectangles {
   max-height: 32vw;
   height: 32vw;
   overflow: hidden;
+  width: 100%;
 }
 body .image-rectangles .r1, body .image-rectangles .r2, body .image-rectangles .r3, body .image-rectangles .r4 {
   background-color: rgb(232, 232, 232);
@@ -332,7 +333,7 @@ body .image-rectangles img {
   width: 100%;
   height: auto;
   position: relative;
-  bottom: 25%;
+  bottom: 50%;
 }
 body .image-rectangles .r1 {
   top: 0;

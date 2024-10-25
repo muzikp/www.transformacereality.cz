@@ -342,7 +342,7 @@ body {
         max-height: $rectangle-unit * 4;        
         height: $rectangle-unit * 4;
         overflow: hidden;
-    
+        width: 100%;
         .r1, .r2, .r3, .r4 {
             background-color: $gray1;
             position: absolute;
@@ -353,7 +353,7 @@ body {
             width: 100%;
             height: auto;
             position: relative;
-            bottom: 25%;
+            bottom: 50%;
         }
     
         .r1 {

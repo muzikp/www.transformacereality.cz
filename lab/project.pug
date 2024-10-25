@@ -57,7 +57,7 @@ block content
 							.fs20.fw300 !{projekt.popis.studio.text.join("<br>")}
 	.gallery
 		each i in projekt.images			
-			- var title = projekt.header + (i.group == "pred" ? " - před rekonstrukcí" : "");// + (i.description ? "<br>" + i.description : "");
+			- var title = projekt.header + (i.group == "pred" ? " - před rekonstrukcí" : projekt.future ? " - připravovaný projekt" : "");// + (i.description ? "<br>" + i.description : "");
 			a(href="/media/images/" + i.url data-lightbox="galerie" data-alt=title data-title=title)
 				.thumbnail
 					img(src="/media/images/" + i.url alt=projekt.header)

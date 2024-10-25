@@ -131,39 +131,104 @@ module.exports = {
             },
             images: [
                 {
-                    url: "ulabe_020.webp",
-                    group: "pred"                    
+                    url: "ulabe_020.webp"                  
                 },
                 {
-                    url: "ulabe_017.webp",
-                    group: "po",
-                    description: ""
+                    url: "ulabe_009.webp"        
                 },
                 {
-                    url: "ulabe_018.webp",
-                    group: "po"                    
+                    url: "ulabe_017.webp"
                 },
                 {
-                    url: "ulabe_019.webp",
-                    group: "po"                  
+                    url: "ulabe_018.webp"                  
+                },
+                {
+                    url: "ulabe_019.webp"                
                 },                
                 {
-                    url: "ulabe_001.webp",
-                    group: "po",
-                    description: ""
+                    url: "ulabe_001.webp"
                 },
                 {
-                    url: "ulabe_004.webp",
-                    group: "po"                    
+                    url: "ulabe_004.webp"                  
+                },                
+                {
+                    url: "ulabe_013.webp"                 
+                }
+            ]
+
+        },
+        {
+            rank: 0.5,
+            id: "zatisi",
+            future: true,
+            header: "Rodinný dům v Zátiší",
+            texty: [
+                {
+                    header: "Lokalita",
+                    text: "V Zátiší je klid. Podél Labe a přes golfové hřiště, připomínající anglický park, dojdete pěšky z Poděbrad za dvacet minut. Na obzoru se tyčí kubistická radiová stanice - zvláštní, téměř futuristický prvek uprostřed polí. Už nevysílá radiové signály, ale doprovází golfisty na trávníky. Na tomto místě můžete jen tak být a dívat se do široké krajiny, obklopeni lužními a borovými lesy. Část lesa na pozemku zůstala - řada borovic podél hranice rámuje výhled do krajiny. Stromy dosadíme, abychom tu obnovili kus polabského lesa. Stačí se usadit mezi stromy, nechat se obklopit přírodou a potom se vrátit domů, uložit se ke spánku pod hvězdami."
                 },
                 {
-                    url: "ulabe_009.webp",
-                    group: "po"                  
+                    header: "Popis projektu",
+                    text: [
+                        "V Zátiší je klid. Podél Labe a přes golfové hřiště, připomínající anglický park, dojdete pěšky z Poděbrad za dvacet minut. Na obzoru se tyčí kubistická radiová stanice – zvláštní, téměř futuristický prvek uprostřed polí. Už nevysílá radiové signály, ale doprovází golfisty na trávníky. Na tomto místě můžete jen tak být a dívat se do široké krajiny, obklopeni lužními a borovými lesy. Část lesa na pozemku zůstala – řada borovic podél hranice rámuje výhled do krajiny. Stromy dosadíme, abychom tu obnovili kus polabského lesa. Stačí se usadit mezi stromy, nechat se obklopit přírodou a potom se vrátit domů, uložit se ke spánku pod hvězdami.",                        
+                    ]
                 },
                 {
-                    url: "ulabe_013.webp",
-                    group: "po"                    
+                    header: "Technické vybavení a dispozice",
+                    text: "Každý byt bude mít k dispozici garážové stání, sklepní kóji a sdílený prostor pro kola a kočárky. Přístup do bytů bude zajištěn výtahem nebo venkovním schodištěm, které bude umístěno mezi domem a pivovarem."
                 },
+                {
+                    header: "Zastavěnost",
+                    text: [
+                        "Plocha pozemku: 1 518 m<sup>2</sup>",
+                        "Plocha pozemku: 1 518 m<sup>2</sup>",
+                        "Zastavěná plocha hlavního objektu:	158 <sup>m2</sup>",
+                        "Zastavěná plocha altánu: 27,4 m<sup>2</sup>",
+                        "Zpevněné plochy vč. teras: 198,6 m<sup>2</sup>",
+                        "Zastavěná a zpevněná plocha celkem: 384,0 m<sup>2</sup>"
+                    ]
+                }
+            ],
+            popis: {
+                lokalita: {
+                    text: "Zátiší, Poděbrady"
+                },
+                projektove_prace: {
+                    text: "2024"
+                },
+                studio: {
+                    label: "Název studia",
+                    text: [
+                        "SheArchitect",
+                        "Ewaldsgade 7, 2200 Copenhagen"
+                    ]
+                }
+            },
+            preview: {
+                url: "zatisi_001.webp",
+                label: "Rodinný dům v Zátiší",
+                year: 2024,
+                info: "",                                
+            },
+            images: [
+                {
+                    url: "zatisi_001.webp",                    
+                },
+                {
+                    url: "zatisi_005.webp",                    
+                },
+                {
+                    url: "zatisi_002.webp",                    
+                },
+                {
+                    url: "zatisi_003.webp",                    
+                },
+                {
+                    url: "zatisi_004.webp",                    
+                },                
+                {
+                    url: "zatisi_006.webp",                    
+                }
             ]
 
         },
