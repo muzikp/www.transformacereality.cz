@@ -1,6 +1,6 @@
 - var i = 1;
 .project-grid
-	each projekt in projekty			
+	each projekt in (projekty.sort((a,b) => a.rank > b.rank ? 1 : a.rank < b.rank ? -1 : 0))
 		a.preview.inherit(href="/projekty/" + projekt.id)
 			.image
 				img(src="/media/images/" + projekt.preview.url alt = projekt.preview.label)

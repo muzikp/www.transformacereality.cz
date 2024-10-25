@@ -278,7 +278,7 @@ body .project-grid .preview .image {
 body .project-grid .preview img {
   max-width: 100%;
   aspect-ratio: 6/4;
-  object-fit: fill;
+  object-fit: cover;
 }
 body .project-grid .preview .label {
   width: 100%;

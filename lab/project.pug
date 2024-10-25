@@ -11,24 +11,20 @@ block content
 	br
 	h1.fs66.fw500 !{projekt.header}
 	.tab
-		if(projekt.texty.historie)
+		each ht in projekt.texty					
 			.tab-row
 				.c40
-					.text.fs20.fw600 Historie
+					.text.fs20.fw600 !{ht.header}
 				.c60
-					.text.fs20.fw300 !{projekt.texty.historie}
-		if(projekt.texty.rekonstrukce)
-			.tab-row
-				.c40
-					.text.fs20.fw600 Rekonstrukce
-				.c60
-					.text.fs20.fw300 !{projekt.texty.rekonstrukce}
-		if(projekt.texty.soucasnost)
-			.tab-row
-				.c40
-					.text.fs20.fw600 Současnost
-				.c60
-					.text.fs20.fw300 !{projekt.texty.soucasnost}
+					-if(Array.isArray(ht.text))
+						each t in ht.text
+							.text.fs20.fw300 !{t}			
+					-else if(Array.isArray(ht.ul))
+						ul
+							each li in ht.ul
+								li.text.fs20.fw300 !{li}
+					-else
+						.text.fs20.fw300 !{ht.text}
 		.tab-row
 			.c40
 				.text.fs20.fw600 Informace o projektu

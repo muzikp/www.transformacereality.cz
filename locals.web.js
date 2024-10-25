@@ -41,8 +41,9 @@ module.exports = {
     poslani: {
         full: [
             "Již více než 20 let s naším zkušeným týmem proměňujeme zajímavé nemovitosti a vdechujeme jim nový život. Každý projekt začíná pečlivým výběrem lokality a objektu, důkladným posouzením jeho stavu a zamyšlením nad jeho budoucím využitím. Naší vizí je vytvářet proměny, které budou dobře sloužit nejen současným, ale i budoucím generacím.",
-            "Součástí námi realizovaných projektů bývají také gastro provozovny a hotely. Mezi oceňované a oblíbené realizace patří například Mamma’s Boutique Hotel s prémiovou restaurací Cucina, restaurace Hostinec nebo Meetnice (dříve Sotto Ponte) v Poděbradech. Kromě toho se věnujeme i revitalizaci průmyslových a výrobních hal.",
+            "Součástí námi realizovaných projektů bývají také gastro provozovny a hotely. Mezi oceňované a oblíbené realizace patří například Mamma’s Boutique Hotel s prémiovou restaurací Cucina, restaurace Hostinec nebo Meetnice (dříve Sotto Ponte) v Poděbradech. Kromě toho se zaměřujeme na rekonstrukce a výstavbu rodinných a bytových domů, stejně jako na revitalizaci průmyslových a výrobních hal v celém Středočeském kraji.",
             "Základem naší práce je pečlivá příprava - ať už jde o kvalitní projektovou dokumentaci pro optimalizaci nákladů při realizaci a dlouhodobém využívání objektu nebo důkladný výpočet budoucích výnosů s ohledem na jeho plánované využití. Při naší tvorbě propojujeme nemovitosti a investory, majitele a nájemníky, stejně jako kvalitní dodavatele a stavební firmy. Úzce spolupracujeme s renomovanými architekty a projektanty, jako jsou Marek Tichý, Eleonora Kubáni, Hana Pospíšilová, Daniel Myška a další.",
+            "Aktuálně spolupracujeme s českou architektkou Kristinou Magasaníkovou, která dlouhodobě žije a pracuje v Dánsku, kde je od roku 2010 také partnerkou studia SheArchitect. Společně připravujeme projekt bytového domu u Labe v Paroubkově ulici v Poděbradech a rodinného domu v Zátiší.",
             "Společně budujeme pouze to, co má smysl, je dlouhodobě udržitelné a bude dělat radost nám i našim potomkům. Ať už chcete úspěšně investovat své prostředky do nemovitostí, sháníte spolehlivého partnera pro své realitní plány, hledáte ideální prostory k podnikání nebo bydlení či prodáváte zajímavou nemovitost, jste na správném místě.",
             "Jsme tu pro vás, připraveni vaše nápady a sny transformovat v novou realitu."
         ],
@@ -70,14 +71,119 @@ module.exports = {
     },
     projekty: [
         {
+            rank: 0,
+            id: "ulabe",
+            header: "Bytový dům u Labe, Paroubkova ulice ",
+            texty: [
+                {
+                    header: "Lokalita",
+                    text: "Tento projekt se nachází v jedinečné oblasti s pestrou historií, nedaleko hlavního náměstí a řeky Labe. Blok domů, který je tvořen rozmanitými budovami z různých historických období, přináší kouzlo starého městského jádra. Nedaleký tok řeky s klidnou atmosférou, přístavními mol a nábřežím dotváří charakter místa."
+                },
+                {
+                    header: "Popis projektu",
+                    text: [
+                        "Hlavním záměrem projektu je maximálně využít atraktivní polohu v blízkosti Labe. Dům bude vystavěn na úzkém, pouhých 8 metrů širokém pozemku, který z jedné strany sousedí s historickým cihlovým pivovarem vysokým 12 metrů a z druhé strany s dvorem městského magistrátu. Zástavba v okolí je nejednotná a uličí čára v Paroubkově ulici je nepravidelná. Návrh domu proto plně respektuje jeho okolí a využívá hlubokých lodžií, které se drží linie dominantního pivovaru.",
+                        "Dům bude výškově sladěn s okolní zástavbou a jeho každé patro bude navrženo tak, aby poskytovalo prostorné byty s velkorysými balkony s výhledem na Labe. Balkony lze díky subtilní prosklené stěně proměnit v zimní zahradu, která umožní jejich využití i v chladnějších obdobích. Vnitřní dispozice bytu bude orientována tak, aby ložnice směřovaly do klidného dvora, který nabídne i menší balkony",
+                        "Předposlední a poslední ustoupené podlaží bude tvořit luxusní byt se čtyřmi terasami, které nabídnou panoramatický výhled na všechny strany."
+                    ]
+                },
+                {
+                    header: "Technické vybavení a dispozice",
+                    text: "Každý byt bude mít k dispozici garážové stání, sklepní kóji a sdílený prostor pro kola a kočárky. Přístup do bytů bude zajištěn výtahem nebo venkovním schodištěm, které bude umístěno mezi domem a pivovarem."
+                },
+                {
+                    header: "Technické specifikace:",
+                    ul: [
+                        "Počet bytů: 3",
+                        "Počet parkovacích míst: 5",
+                        "Počet sklepních kójí: 3"
+                    ]
+                },
+                {
+                    header: "Dispozice bytů:",
+                    ul: [
+                        "Byt 1: 2. NP, 3+kk, ČPP 98,5 m², HPP 119,8 m², balkon 20,3 m², terasa 49,5 m², zahrada 138,2 m²",
+                        "Byt 2: 3. NP, 4+kk, ČPP 98,5 m², HPP 119,8 m², balkony 31 m²"
+                    ]
+                }
+            ],
+            popis: {
+                lokalita: {
+                    text: "Paroubkova ulice, Poděbrady"
+                },
+                projektove_prace: {
+                    text: "2024"
+                },
+                studio: {
+                    label: "Název studia",
+                    text: [
+                        "SheArchitect",
+                        "Ewaldsgade 7, 2200 Copenhagen"
+                    ]
+                }
+            },
+            preview: {
+                url: "ulabe_001.webp",
+                label: "Bytový dům u Labe",
+                year: 2024,
+                info: "",                                
+            },
+            images: [
+                {
+                    url: "ulabe_020.webp",
+                    group: "pred"                    
+                },
+                {
+                    url: "ulabe_017.webp",
+                    group: "po",
+                    description: ""
+                },
+                {
+                    url: "ulabe_018.webp",
+                    group: "po"                    
+                },
+                {
+                    url: "ulabe_019.webp",
+                    group: "po"                  
+                },                
+                {
+                    url: "ulabe_001.webp",
+                    group: "po",
+                    description: ""
+                },
+                {
+                    url: "ulabe_004.webp",
+                    group: "po"                    
+                },
+                {
+                    url: "ulabe_009.webp",
+                    group: "po"                  
+                },
+                {
+                    url: "ulabe_013.webp",
+                    group: "po"                    
+                },
+            ]
+
+        },
+        {
             rank: 1,
             id: "orfeus",
             header: "Multifunkční dům Orfeus (Náš Hostinec, hotel Papas)",
-            texty: {
-                historie: "Budova hotelu Orfeus vznikla v období reálného socialismu, kdy došlo ke sloučení penzionu Tatra v Tyršově ulici a hotelového objektu Orfeus směrem k lázeňské kolonádě. Přestavba se vyznačovala účelovým designem, typickým pro svou dobu, který bohužel postrádal ohledy na praktické uspořádání a estetiku. Komplikované dispozice, nevyhovující interiér a především fasáda nového objektu neměly architektonické vazby na přilehlou lázeňskou promenádu. Nevhodné zvýšení přízemí nad úroveň terénu ztížilo přístup k hotelu a restauraci, které byly dosažitelné pouze po rampách a schodištích zasazených do uměle vytvořených předzahrádek.",
-                rekonstrukce: "Cílem rekonstrukce bylo otevřít parter a vytvořit prostor, který by přímo navazoval na poděbradskou kolonádu, a to jak vizuálně, tak provozně. Původní architektura byla zbavena dodatečných přístaveb a textur, fasáda byla sjednocena jednoduchým rastrem francouzských oken. Historii dvou původních domů připomíná nenápadný akcent nároží v Tyršově ulici, zdobený jemnou plastikou bosáže, která přechází z kolonády do ulice. Architektura byla obohacena o střešní nástavbu, ale nejvýraznější změnou je přeměna prostoru před hotelem, kde byla přidána přízemní přístavba. Tato nová dřevěná veranda ve stylu polabských hostinců z období první republiky, dotváří charakter prostoru. Motiv verandy se promítl také do interiérů a vybavení restaurace, která se dnes řadí mezi nejoblíbenější místa na kolonádě.",
-                soucasnost: "Dnes je budova nadále využívána jako hotel, provozně propojený se sousedním lázeňským domem Felicitas. Prostory někdejšího penzionu Tatra v Tyršově ulici byly přeměněny na byty, přičemž velký byt s terasou je umístěn také ve střešní nástavbě posledního podlaží. V přízemí se nachází restaurace Náš hostinec, která je přístupná veřejnosti. Provozní vstup, zázemí a nově vytvořená parkovací místa jsou situována ve vnitrobloku."
-            },
+            texty: [
+                        {
+                            header: "Historie",
+                            text: "Budova hotelu Orfeus vznikla v období reálného socialismu, kdy došlo ke sloučení penzionu Tatra v Tyršově ulici a hotelového objektu Orfeus směrem k lázeňské kolonádě. Přestavba se vyznačovala účelovým designem, typickým pro svou dobu, který bohužel postrádal ohledy na praktické uspořádání a estetiku. Komplikované dispozice, nevyhovující interiér a především fasáda nového objektu neměly architektonické vazby na přilehlou lázeňskou promenádu. Nevhodné zvýšení přízemí nad úroveň terénu ztížilo přístup k hotelu a restauraci, které byly dosažitelné pouze po rampách a schodištích zasazených do uměle vytvořených předzahrádek."
+                        },
+                        {
+                            header: "Rekonstrukce",
+                            text: "Cílem rekonstrukce bylo otevřít parter a vytvořit prostor, který by přímo navazoval na poděbradskou kolonádu, a to jak vizuálně, tak provozně. Původní architektura byla zbavena dodatečných přístaveb a textur, fasáda byla sjednocena jednoduchým rastrem francouzských oken. Historii dvou původních domů připomíná nenápadný akcent nároží v Tyršově ulici, zdobený jemnou plastikou bosáže, která přechází z kolonády do ulice. Architektura byla obohacena o střešní nástavbu, ale nejvýraznější změnou je přeměna prostoru před hotelem, kde byla přidána přízemní přístavba. Tato nová dřevěná veranda ve stylu polabských hostinců z období první republiky, dotváří charakter prostoru. Motiv verandy se promítl také do interiérů a vybavení restaurace, která se dnes řadí mezi nejoblíbenější místa na kolonádě.",
+                        },
+                        {
+                            header: "Současnost",
+                            text: "Dnes je budova nadále využívána jako hotel, provozně propojený se sousedním lázeňským domem Felicitas. Prostory někdejšího penzionu Tatra v Tyršově ulici byly přeměněny na byty, přičemž velký byt s terasou je umístěn také ve střešní nástavbě posledního podlaží. V přízemí se nachází restaurace Náš hostinec, která je přístupná veřejnosti. Provozní vstup, zázemí a nově vytvořená parkovací místa jsou situována ve vnitrobloku."
+                        }                        
+            ],
             popis: {
                 lokalita: {
                     text: "Náměstí T. G. Masaryka, Poděbrady"
@@ -159,11 +265,20 @@ module.exports = {
             rank: 2,
             id: "ukolbabu",
             header: "Dům U Kolbabů (Cucina, Mamma's Boutique hotel)",
-            texty: {
-                historie: "Dům U Kolbabů, původně postavený ve 30. letech 20. století, se nachází na kolonádě v lázeňském městě Poděbrady. Jedná se o pětipodlažní, kompletně podsklepený objekt, který byl před zahájením rekonstrukce neobývaný.",
-                rekonstrukce: "Objekt se nachází v památkové zóně, což vyžadovalo citlivý přístup k rekonstrukci a dílčích úpravách fasády, aby byl zachován autentický charakter 30. let. Stavební úpravy vedly k vytvoření polyfunkčních prostor, přičemž počet bytových jednotek byl snížen z původních devíti na pět. V rámci rekonstrukce byl instalován nový výtah, přístupný z podesty schodiště na každém podlaží. Dále bylo vytvořeno osm krytých a tři nekrytá parkovací stání.",
-                soucasnost: "V současnosti slouží objekt jako butikový hotel Mamma's s prestižní restaurací Cucina v přízemí. Restaurace, která je oblíbeným cílem návštěvníků po celý rok, nabízí výtečnou středomořskou kuchyni a rozsáhlý výběr vín."
-            },
+            texty: [
+                {
+                    header: "Historie",
+                    text: "Dům U Kolbabů, původně postavený ve 30. letech 20. století, se nachází na kolonádě v lázeňském městě Poděbrady. Jedná se o pětipodlažní, kompletně podsklepený objekt, který byl před zahájením rekonstrukce neobývaný."
+                },
+                {
+                    header: "Úpravy",
+                    text: "Objekt se nachází v památkové zóně, což vyžadovalo citlivý přístup k rekonstrukci a dílčích úpravách fasády, aby byl zachován autentický charakter 30. let. Stavební úpravy vedly k vytvoření polyfunkčních prostor a bytových jednotek. V rámci rekonstrukce byl instalován nový výtah, přístupný z podesty schodiště na každém podlaží. Dále bylo vytvořeno osm krytých a tři nekrytá parkovací stání.",
+                },
+                {
+                    header: "Současnost",
+                    text: "V současnosti slouží objekt jako butikový hotel Mamma's s prestižní restaurací Cucina v přízemí. Restaurace, která je oblíbeným cílem návštěvníků po celý rok, nabízí výtečnou středomořskou kuchyni a rozsáhlý výběr vín."
+                }                
+            ],
             popis: {
                 lokalita: {
                     text: "Poděbrady"
@@ -230,11 +345,20 @@ module.exports = {
             rank: 3,
             id: "dum17",
             header: "Dům č. p. 17, Jiřího náměstí",
-            texty: {
-                historie: "Dům č. p. 17 se nachází v historickém jádru města Poděbrady, na území městské památkové zóny. Původně byl dům částečně podsklepený, se dvěma nadzemními podlažími a půdním prostorem. Před zahájením rekonstrukce nebyl objekt využíván.",
-                rekonstrukce: "Cílem rekonstrukce dlouhodobě nevyužívané budovy bylo obnovit její funkčnost a adaptovat ji pro komerční účely, s částečným využitím podkroví pro rodinné bydlení. V rámci stavebních prací byly rovněž realizovány nové inženýrské sítě, včetně přípojek plynu, splaškové kanalizace a vodovodu.",
-                soucasnost: "Po dokončení rekonstrukce se v přízemí domu nacházejí dva samostatné komerční prostory. Druhé nadzemní podlaží slouží jako kancelářské prostory, zatímco původní půdní prostory byly přestavěny na dvě samostatné bytové jednotky."
-            },
+            texty: [
+                {
+                    header: "Historie",
+                    text: "Dům č. p. 17 se nachází v historickém jádru města Poděbrady, na území městské památkové zóny. Původně byl dům částečně podsklepený, se dvěma nadzemními podlažími a půdním prostorem. Před zahájením rekonstrukce nebyl objekt využíván.",
+                },
+                {
+                    header: "Rekonstrukce",
+                    text: "Cílem rekonstrukce dlouhodobě nevyužívané budovy bylo obnovit její funkčnost a adaptovat ji pro komerční účely, s částečným využitím podkroví pro rodinné bydlení. V rámci stavebních prací byly rovněž realizovány nové inženýrské sítě, včetně přípojek plynu, splaškové kanalizace a vodovodu.",
+                },
+                {
+                    header: "Současnost",
+                    text: "Po dokončení rekonstrukce se v přízemí domu nacházejí dva samostatné komerční prostory. Druhé nadzemní podlaží slouží jako kancelářské prostory, zatímco původní půdní prostory byly přestavěny na dvě samostatné bytové jednotky."
+                }
+            ],
             popis: {
                 lokalita: {
                     text: "Jiřího náměstí 17/28, Poděbrady I"
@@ -295,11 +419,20 @@ module.exports = {
             rank: 4,
             id: "uvanu",
             header: "Bar U Váňů",
-            texty: {
-                historie: "Bar U Váňů se nachází v suterénu historické budovy v centru Poděbrad. Tato budova má bohatou minulost, která se odráží v její architektuře a atmosféře. Staré cihlové oblouky, které dominují interiéru, jsou připomínkou dob minulých a dotvářejí jedinečnou atmosféru tohoto místa.",
-                rekonstrukce: "Při rekonstrukci bylo klíčovým cílem zachovat původní ráz budovy, zároveň však přinést moderní prvky a zlepšit funkčnost prostoru. Staré prosvětlené cihlové oblouky byly citlivě opraveny a integrované do nového designu. Pro dosažení vzdušnosti a světlosti interiéru byly použity světlé barvy. Moderní design v podobě geometrické grafiky na stěnách tvoří zajímavý kontrast s historickými prvky. Bar z nerezové oceli a kovu, spolu se schodištěm a židlemi, byly zvoleny jako temnější akcenty pro vyvážení celkového dojmu.",
-                soucasnost: "Dnes se bar pyšní moderním, elegantním interiérem, který se snoubí s historickými prvky. Velké zrcadlo kopíruje tvar cihlového oblouku a opticky zvětšuje prostor, zatímco světlá litá podlaha a bělený dub na nábytku vytvářejí pocit většího prostoru a lehkosti. Lavice čalouněné ve stejném odstínu jako podlaha umocňují jednotný vzhled interiéru. Tento bar je oblíbeným místem pro relaxaci v centru města, kde se historie potkává s moderním designem."
-            },
+            texty: [
+                {
+                    header: "Historie",
+                    text: "Bar U Váňů se nachází v suterénu historické budovy v centru Poděbrad. Tato budova má bohatou minulost, která se odráží v její architektuře a atmosféře. Staré cihlové oblouky, které dominují interiéru, jsou připomínkou dob minulých a dotvářejí jedinečnou atmosféru tohoto místa.",
+                },
+                {
+                    header: "Rekonstrukce",
+                    text: "Při rekonstrukci bylo klíčovým cílem zachovat původní ráz budovy, zároveň však přinést moderní prvky a zlepšit funkčnost prostoru. Staré prosvětlené cihlové oblouky byly citlivě opraveny a integrované do nového designu. Pro dosažení vzdušnosti a světlosti interiéru byly použity světlé barvy. Moderní design v podobě geometrické grafiky na stěnách tvoří zajímavý kontrast s historickými prvky. Bar z nerezové oceli a kovu, spolu se schodištěm a židlemi, byly zvoleny jako temnější akcenty pro vyvážení celkového dojmu.",
+                },
+                {
+                    header: "Současnost",
+                    text: "Dnes se bar pyšní moderním, elegantním interiérem, který se snoubí s historickými prvky. Velké zrcadlo kopíruje tvar cihlového oblouku a opticky zvětšuje prostor, zatímco světlá litá podlaha a bělený dub na nábytku vytvářejí pocit většího prostoru a lehkosti. Lavice čalouněné ve stejném odstínu jako podlaha umocňují jednotný vzhled interiéru. Tento bar je oblíbeným místem pro relaxaci v centru města, kde se historie potkává s moderním designem."
+                }
+            ],            
             popis: {
                 lokalita: {
                     text: "Jiřího náměstí, Poděbrady 1"
@@ -357,11 +490,20 @@ module.exports = {
             rank: 5,
             id: "meetnice",
             header: "Restaurace Meetnice",
-            texty: {
-                historie: "Původně sloužil objekt jako rodinný dům, jehož atraktivní poloha na břehu řeky Labe nabízela potenciál pro širší občanské využití.",
-                rekonstrukce: "Při rekonstrukci rodinného domu byl důraz kladen na jeho jedinečnou polohu a snadnou dostupnost. Budova prošla kompletní a náročnou přestavbou, díky které se proměnila na stylovou restauraci s prostornou venkovní terasou a útulným podkrovním bytem.",
-                soucasnost: "Od roku 2000, kdy byla rekonstrukce dokončena, objekt v průběhu let změnil majitele, provozovatele i samotný název. Z původní restaurace Sotto Ponte se stala Meetnice, což už svým názvem odkazuje na příjemné místo pro setkávání a posezení v malebném prostředí u řeky Labe."
-            },
+            texty: [
+                {
+                    header: "Historie",
+                    text: "Původně sloužil objekt jako rodinný dům, jehož atraktivní poloha na břehu řeky Labe nabízela potenciál pro širší občanské využití."
+                },
+                {
+                    header: "Rekonstrukce",
+                    text: "Při rekonstrukci rodinného domu byl důraz kladen na jeho jedinečnou polohu a snadnou dostupnost. Budova prošla kompletní a náročnou přestavbou, díky které se proměnila na stylovou restauraci s prostornou venkovní terasou a útulným podkrovním bytem."
+                },
+                {
+                    header: "Současnost",
+                    text: "Od roku 2000, kdy byla rekonstrukce dokončena, objekt v průběhu let změnil majitele, provozovatele i samotný název. Z původní restaurace Sotto Ponte se stala Meetnice, což už svým názvem odkazuje na příjemné místo pro setkávání a posezení v malebném prostředí u řeky Labe."
+                }
+            ],
             popis: {
                 lokalita: {
                     text: "Jiřího náměstí, Poděbrady 1"
@@ -395,7 +537,7 @@ module.exports = {
                 }
             ]
 
-        }
+        }        
     ]
 
 }
