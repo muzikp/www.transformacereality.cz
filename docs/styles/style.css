@@ -176,6 +176,9 @@ body .c25 {
 body .c60 {
   width: 60%;
 }
+body .c80 {
+  width: 80%;
+}
 body .c100 {
   width: 100%;
 }
@@ -502,7 +505,7 @@ body .no-padding {
   body .flex {
     display: block;
   }
-  body .c100, body .c60, body .c40, body .c33, body .c20, body .c50, body .c25 {
+  body .c100, body .c60, body .c40, body .c33, body .c20, body .c50, body .c25, body .c80 {
     display: block;
     width: 100%;
     padding: 1rem 0px;

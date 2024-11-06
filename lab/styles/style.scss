@@ -186,7 +186,10 @@ body {
     .c60 {
         width: 60%;
     };    
-    .c100 {
+    .c80 {
+        width: 80%;
+    }
+     .c100 {
         width: 100%;
     }
     .jc-c {
@@ -541,7 +544,7 @@ body {
             display: block;
             //flex-direction: column;
         }
-        .c100,.c60,.c40,.c33,.c20,.c50,.c25 {
+        .c100,.c60,.c40,.c33,.c20,.c50,.c25,.c80 {
             display: block;
             width: 100%;
             padding: 1rem 0px;
