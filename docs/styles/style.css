@@ -496,16 +496,16 @@ body .no-padding {
 }
 
 @media screen and (max-width: 992px) {
-  #footbar .sponsor-panel {
-    display: block;
-    text-align: center;
+  body #footbar .sponsor-panel {
+    display: block !important;
+    text-align: center I !important;
     width: 100%;
     flex-wrap: wrap;
   }
-  #footbar .sponsor-panel img {
+  body #footbar .sponsor-panel img {
     margin: 1rem 10%;
   }
-  #footbar .disclaimer {
+  body #footbar .disclaimer {
     display: flex;
     justify-content: center;
     text-align: center;
