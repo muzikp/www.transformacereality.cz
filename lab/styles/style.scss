@@ -414,9 +414,10 @@ body {
                 color: white;
                 text-shadow: 2px 2px 10px black;
             }
-        }
+        }    
     }
-    
+
+  
     /* Animace pro pozadí */
     @keyframes slide-in {
         from {
@@ -477,6 +478,25 @@ body {
         .logo img {
             height: 3rem;
         }
+        .sponsor-panel {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 2rem;
+            img {            
+                height: 80px;                
+            }
+            img:not(:last-child) {
+                margin-right: 2rem;
+            }        
+        }
+    
+        .disclaimer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem 25%;
+        }
     }
 
     .container-404 { 
@@ -513,6 +533,24 @@ body {
 
 
 @media screen and (max-width: $mobile_breakpoint) {
+    #footbar {
+        .sponsor-panel {
+            display: block;                        
+            text-align: center;            
+            width: 100%;
+            flex-wrap: wrap;            
+            img {              
+                margin: 1rem 10%;
+            }                        
+        }
+    
+        .disclaimer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem 0px;
+        }
+    }
     body {
         .content {            
             margin: 20px auto;

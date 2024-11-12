@@ -448,6 +448,24 @@ body #footbar .evalytics {
 body #footbar .logo img {
   height: 3rem;
 }
+body #footbar .sponsor-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+body #footbar .sponsor-panel img {
+  height: 80px;
+}
+body #footbar .sponsor-panel img:not(:last-child) {
+  margin-right: 2rem;
+}
+body #footbar .disclaimer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 25%;
+}
 body .container-404 {
   min-height: 80vh;
   display: flex; /* Aktivace Flexboxu */
@@ -478,6 +496,21 @@ body .no-padding {
 }
 
 @media screen and (max-width: 992px) {
+  #footbar .sponsor-panel {
+    display: block;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #footbar .sponsor-panel img {
+    margin: 1rem 10%;
+  }
+  #footbar .disclaimer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0px;
+  }
   body .content {
     margin: 20px auto;
     max-width: 95vw;
