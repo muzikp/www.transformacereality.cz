@@ -58,7 +58,7 @@
 		"host": "https://www.transformacereality.cz",
 		"sitemap": {
 			"auto": true,
-			"frequency": "weekly",
+			"frequency": "daily",
 			"extensions": [
 				"html"
 			],
@@ -68,7 +68,7 @@
 			"auto": true,
 			"content": [
 				"User-agent: *",
-				"Disallow:",
+				"Allow: /",				
 				"Sitemap: https://www.transformacereality.cz/sitemap.xml"
 			]
 		},
